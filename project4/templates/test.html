@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+
+        <script>
+
+            function getVal(v,idx){
+                console.log(idx,v)
+            }
+            function arrayExample(){
+
+                const fruits=["Banana","Mango","Apple"]
+                //console.log("Old array "+fruits)
+
+                fruit = document.getElementById('example-3').value
+               // fruits.push(fruit)
+               // fruits.pop(fruit)
+               // fruits.shift(fruit)
+               // fruits.unshift(fruit)
+               // fruits.slice(0,3)
+
+               fruits.forEach(getVal)
+   
+                // console.log("New array "+fruits)
+            }
+            /*let getProduct = () => {
+
+                a = 5
+                b = 10
+                prod = a*b
+                document.getElementById("example-2").value=prod
+
+            } */
+            /*
+            function getProduct(){
+
+                a = 5
+                b = 10
+                prod = a*b
+                document.getElementById("example-1").value=prod
+
+            } */
+
+           /* function showValues()
+            {
+                let length = 16
+                console.log(typeof length)
+
+                let person = {
+                    firstName:"Bob", 
+                    lastName:"Krishna",
+
+                fullname: function() {
+
+                    return this.firstName+" "+this.lastName
+                }
+            }
+                console.log(person.firstName,person.lastName, person.fullname())
+
+            } */
+        </script>    
+    </head>
+    <body>
+       
+        <h1> JavaScript Example</h1>
+
+       <!-- <input type = "button" value = "test" onClick="showValues()"  > -->
+         
+        <!-- <input type = "text" name="example-1" id="example-1" > 
+
+        
+        <input type = "text" name="example-2" id="example-2" >
+        <input type = "button" value = "test" onClick="getProduct()"  > -->
+
+        <input type = "text" name="example-3" id="example-3" >
+        <input type = "button" value = "test" onClick="arrayExample()"  >
+        
+      
+    </body>
+</html>
